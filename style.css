@@ -8,13 +8,7 @@ h1 {
 body {
     background-color: grey;
     color: white;
-    font-family: Courier;
-}
-
-p {
-    border: 2px solid white;
-    padding: 10px;
-    margin: 100px;
+    font-family: Tahoma;
 }
 
 .nav {
@@ -27,18 +21,28 @@ p {
 
 .nav li {
     float: left;
-    
+    border-right: 1px solid;
 }
 
 li a {
     display: block;
     color: white;
-    text-align: centre;
-    padding: 10px 5px; 
+    padding: 10px 20px;
     text-decoration: none;
+    text-align: right;
 }
 
 li a:hover {
     background-color: white;
     color: black;
+}
+
+.active {
+    background-color: black;
+}
+
+footer {
+    background-color: silver;
+    padding: 10px;
+    text-align: center;
 }
