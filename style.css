@@ -35,14 +35,35 @@ li a {
 li a:hover {
     background-color: white;
     color: black;
-}
-
-.active {
-    background-color: black;
+    transition-duration: 1s;
 }
 
 footer {
     background-color: silver;
     padding: 10px;
     text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.flex-container button {
+    background-color: silver;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.flex-container button:hover {
+    background-color: white;
+    color: black;
 }
