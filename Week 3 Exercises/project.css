@@ -1,0 +1,40 @@
+.body {
+    border: solid 2px;
+    border-radius: 20px;
+    font-family: ;
+}
+
+.header {
+    text-decoration: underline;
+    padding-bottom: 60px;
+    margin-left: 20px;
+}
+
+.container {
+    background-color: lightblue;
+    border: solid 2px;
+    border-radius: 20px;
+    width: 600px;
+    padding: 0px 10px 10px 20px;
+}
+
+.content {
+    margin: 100px;
+}
+
+.blue {
+    color: blue;
+}
+
+.orange {
+    color: orange;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+ul {
+    padding: 0;
+}
