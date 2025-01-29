@@ -1,0 +1,40 @@
+h1 {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    font-size: 50px;
+}
+
+#navbar {
+    background-color: darkgray;
+}
+
+a {
+    color: white;
+}
+
+li {
+    padding: 10px;
+}
+
+.section-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-content {
+    font-size: 20px;
+    color: darkred;
+}
+
+div {
+    border: solid 5px;
+    padding: 10px;
+}
+
+.contact-button {
+    background-color: aquamarine;
+    font-size: 100px;
+    padding: 50px;
+}
