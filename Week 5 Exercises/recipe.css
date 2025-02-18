@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Young Serif;
+    src: url(YoungSerif-Regular.ttf);
+}
+
+body {
+    background-color: #F7E9D7;
+}
+
+.values,
+h2,
+ol> ::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+h1,
+h2 {
+    font-family: Young Serif;
+}
+
+h3,
+p,
+li,
+td {
+    font-family: Outfit;
+}
+
+img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.recipe {
+    width: 500px;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1px 0px 1px 20px;
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+td {
+    padding: 0px 200px 0px 0px;
+}
