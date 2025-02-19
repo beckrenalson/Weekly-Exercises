@@ -28,7 +28,7 @@ body {
 
 .learning {
     background-color: hsl(47, 88%, 63%);
-    padding: 8px 15px;
+    padding: 7px 15px;
     border-radius: 5px;
     width: fit-content;
 }
@@ -63,14 +63,15 @@ p {
 
 .medium {
     font-weight: 500;
-    padding: 20px 0px 25px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 .text-xl {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .greg {
+    padding-top: 10px;
     display: flex;
     align-items: center;
 }
