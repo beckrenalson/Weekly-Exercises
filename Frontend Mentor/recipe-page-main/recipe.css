@@ -49,10 +49,12 @@ img {
     border-radius: 10px;
 }
 
-ul {
+ul,
+ol {
     padding: 0;
 }
 
 td {
     padding: 0px 200px 0px 0px;
+    border-bottom: solid 2px lightgray;
 }
