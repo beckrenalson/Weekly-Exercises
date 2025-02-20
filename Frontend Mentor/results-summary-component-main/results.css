@@ -1,9 +1,10 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: HankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
 body {
+    font-family: HankenGrotesk;
     background-color: #EEF2FA;
 }
 
@@ -20,9 +21,11 @@ body {
     width: 700px;
     height: 500px;
     display: flex;
+    border-radius: 30px;
 }
 
 .yourresult {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,24 +33,32 @@ body {
     padding-top: 30px;
     width: 450px;
     height: 100;
-    border: solid 3px pink;
     border-radius: 30px;
-    /* background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%)); */
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
 
 .score {
     display: flex;
-    border: 3px solid green;
+    border: 0;
     width: 200px;
     height: 200px;
     border-radius: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
 .bold {
     font-weight: 800;
+}
+
+.medium {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 500;
 }
 
 .text-xl {
@@ -67,4 +78,15 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px;
+}
+
+.grey {
+    color: hsl(241, 100%, 89%);
+    opacity: 0.5;
+}
+
+.comment {
+    border: 3px solid pink;
+    display: flex;
+    
 }
