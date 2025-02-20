@@ -74,7 +74,7 @@ body {
 }
 
 .summary {
-    border: solid 3px red;
+    /* border: solid 3px red; */
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -82,11 +82,65 @@ body {
 
 .grey {
     color: hsl(241, 100%, 89%);
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    color: hsl(166, 100%, 37%);
+}
+
+.blue {
+    color: hsl(234, 85%, 45%);
+}
+
+.redback {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.yellowback {
+    background-color: hsl(39, 100%, 56%, 0.1); 
+}
+
+.greenback {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.blueback {
+    background-color: hsl(234, 85%, 45%, 0.1);;
+}
+
+.translucent {
     opacity: 0.5;
 }
 
+.dgb {
+    color: hsl(224, 30%, 27%);
+}
+
 .comment {
-    border: 3px solid pink;
     display: flex;
-    
+    width: 220px;
+    text-align: center;
+}
+
+.tab {
+    /* border: solid 3px pink; */
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.percent {
+    display: flex;
+    align-items: space-items;
 }
