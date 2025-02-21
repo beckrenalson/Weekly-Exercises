@@ -44,32 +44,14 @@ footer {
     text-align: center;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
+.container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(px, 1fr));
+   gap: 100px;
+   margin: auto;
 }
 
-.flex-container button {
-    background-color: silver;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 30px;
-    border-radius: 8px;
-
-}
-
-.flex-container a {
-    text-decoration: none;
-    color: white;
-}
-
-.flex-container button:hover {
-    background-color: white;
-    color: black;
-    transition-duration: 0.4s;
-    border-radius: 8px;
+.container img {
+    width: 100%;
+    height: auto;
 }
