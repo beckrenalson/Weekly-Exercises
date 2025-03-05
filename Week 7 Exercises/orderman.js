@@ -1,35 +1,38 @@
-let productType = prompt("Enter product type");
-let quantity = prompt("Enter quantity");
-let isMember = prompt("Are you a member?");
+// let productType = prompt("Enter product type");
+// let quantity = prompt("Enter quantity");
+// let isMember = prompt("Are you a member?");
 
 function calculatePrice(productType, quantity, isMember) {
 
-    let price
+    let price;
 
-    if(productType == "electronics") {
+    if (productType == "electronics") {
         price = 100;
     }
 
-    if(productType == "clothing") {
+    if (productType == "clothing") {
         price = 50;
     }
 
-    if(productType == "grocery") {
+    if (productType == "grocery") {
         price = 20;
     }
 
-    if(isMember == "true") {
-        totalPrice = totalPrice / 0.1;
+    let sumPrice = price * quantity;
+
+    if (isMember == "true") {
+        sumPrice = sumPrice * 0.9;
     }
 
-    if(quantity > 5) {
-        totalPrice =  totalPrice / 0.05;
+    if (quantity > 5) {
+        sumPrice = sumPrice * 0.95;
     }
+
+    if (sumPrice == 500) {
+        sumPrice = sumPrice - 50;
+    }
+
+    return sumPrice;
 }
 
-function totalPrice(price * quantity) {
-    return price
-
-}
-
-console.log(calculatePrice);
+console.log(calculatePrice("electronics", 3, "true"));
