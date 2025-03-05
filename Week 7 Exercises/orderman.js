@@ -28,11 +28,11 @@ function calculatePrice(productType, quantity, isMember) {
         sumPrice = sumPrice * 0.95;
     }
 
-    if (sumPrice >= 500) {
+    if (sumPrice > 500) {
         sumPrice = sumPrice - 50;
     }
 
     return sumPrice;
 }
 
-console.log(calculatePrice("electronics", 10, "true"));
+console.log(calculatePrice("electronics", 5, "true"));
