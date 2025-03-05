@@ -35,4 +35,4 @@ function calculatePrice(productType, quantity, isMember) {
     return sumPrice;
 }
 
-console.log(calculatePrice("electronics", 5, "true"));
+console.log(calculatePrice("electronics", 10, "no"));
