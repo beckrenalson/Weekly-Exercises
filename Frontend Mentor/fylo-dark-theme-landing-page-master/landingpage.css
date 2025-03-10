@@ -8,7 +8,10 @@ body {
     background-position: 0px 750px;
 }
 
-.getstarted, h1, .nav, h3 {
+.getstarted,
+h1,
+.nav,
+h3 {
     font-family: Raleway;
 }
 
@@ -16,12 +19,12 @@ body {
     font-weight: 700;
 }
 
-p {
+p,
+.link, td {
     font-family: Open Sans;
 }
 
 .flex {
-
     display: flex;
     flex-direction: column;
 }
@@ -61,7 +64,6 @@ p {
     align-items: center;
     border-radius: 30px;
     background-image: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
-    margin-top: 10px;
 }
 
 .info {
@@ -83,9 +85,134 @@ p {
     height: 70px;
 }
 
+.stayproductive {
+    display: flex;
+    align-items: center;
+}
+
 .seehowfyloworks {
     width: 500px;
+
 }
+
+.link {
+    color: hsl(176, 68%, 64%);
+    border-bottom: solid 1px;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+.card2 {
+    border: solid;
+    border-radius: 5px;
+    width: 340px;
+    height: 170px;
+    padding: 30px;
+}
+
+.reviews {
+    margin-top: 200px;
+    display: flex;
+    gap: 40px;
+}
+
+.quotes {
+
+    position: relative;
+    left: 80px;
+    bottom: 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user p,
+.earlyaccess p,
+.email p {
+    font-size: 10px;
+}
+
+.userdetails {
+    padding-left: 10px;
+}
+
+.user img {
+    height: 30px;
+    border-radius: 100px
+}
+
+.starter {
+    margin-top: 200px;
+    width: 600px;
+    height: fit-content;
+    border: solid;
+    padding: 20px 80px 20px 80px;
+}
+
+.earlyaccess {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 70px 20px 70px;
+}
+
+.email {
+   
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+    color: lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.email p {
+    padding-left: 50px;
+}
+
+.subscribe {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.loremipsum {
+    width: 350px;
+    border: solid;
+}
+
+.loremipsum img {
+    border: solid;
+}
+
+.contacttype {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: solid;
+}
+
+.contacttype img {
+   height: 20px;
+}
+
+.footer {
+    display: flex;
+    gap: 200px;
+    margin-top: 200px;
+}
+
+.links {
+
+    display: flex;
+
+}
+
+
 
 /* * {
     border: solid;
