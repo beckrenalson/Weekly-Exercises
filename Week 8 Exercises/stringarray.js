@@ -1,8 +1,11 @@
-let indexing = ['w', 'o', 'r', 'l', 'd'];
+let indexing = ["world"];
 
-indexing[2] = "R";
-console.log(indexing);
+console.log(indexing[0] [2]);
 
-let convString = ['h ', 'e ', 'l ', 'l ', 'o']
+let convString = ["hello"]
 
-console.log(convString);
+console.log(convString[0] [0]);
+console.log(convString[0] [1]);
+console.log(convString[0] [2]);
+console.log(convString[0] [3]);
+console.log(convString[0] [4]);
