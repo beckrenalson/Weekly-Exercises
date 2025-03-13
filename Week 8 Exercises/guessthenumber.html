@@ -9,15 +9,23 @@
 </head>
 
 <body>
+
     <div class="box">
-        <div class="card">
+        <div class="fail" id="fail">
+            <h1>YOU FAILED</h1>
+        </div>
+        <div class="reset" id="reset">
+            <button class="refresh" onClick="refreshPage()"><img src="reset.png"></button>
+        </div>
+        <div class="card" id="card">
             <script src="guessthenumber.js"></script>
             <h1>Guess a number between 0 and 99</h1>
-            <input class="input" id="chosenNumber" required>
+            <input class="input" id="chosenNumber" autofocus placeholder="<3">
             <div class="message" id="message">Start guessing</div>
             <button class="button" onClick="guessNumber()">Check Answer</button>
         </div>
     </div>
+  
 </body>
 
 </html>

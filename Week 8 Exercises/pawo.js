@@ -3,6 +3,7 @@ let book = {
     author: "J.K Rowling",
     yearPublished: 2005,
 }
+book.name = "Harry Potter and the Philosophers Stone";
 console.log(book);
 
 let car = {
@@ -10,6 +11,7 @@ let car = {
     model: "Lancer Evolution III",
     year: 1995,
 }
+car["model"] = "Lancer GLXI";
 console.log(car);
 
 let artist = {
@@ -17,6 +19,7 @@ let artist = {
     age: 35,
     genre: "Hip-Hop/Rap",
 }
+
 console.log(artist);
 
 console.log(document.body);
