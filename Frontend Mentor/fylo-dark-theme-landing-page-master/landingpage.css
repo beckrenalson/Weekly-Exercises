@@ -181,11 +181,6 @@ p,
 
 .loremipsum {
     width: 350px;
-    border: solid;
-}
-
-.loremipsum img {
-    border: solid;
 }
 
 .contacttype {
@@ -193,7 +188,6 @@ p,
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border: solid;
 }
 
 .contacttype img {
