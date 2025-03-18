@@ -48,6 +48,9 @@ p {
     justify-content: space-between;
     border: 0;
     background-color: transparent;
+    border-top: solid;
+    color: hsl(275, 100%, 97%);
+    padding: 20px;
 }
 
 .answer {
