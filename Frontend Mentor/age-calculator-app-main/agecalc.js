@@ -1,25 +1,38 @@
-let day = document.getElementById("inputDay").value;
-let month = document.getElementById("inputMonth").value;
-let year = document.getElementById("inputYear").value;
+function getBirthday() {
+    let day = document.getElementById("inputDay").value;
+    let month = document.getElementById("inputMonth").value;
+    let year = document.getElementById("inputYear").value;
 
-// function getAge() {
-//     dobInputDay = document.getElementById("inputDay");
-//     dobInputMonth = document.getElementById("inputMonth");
-//     dobInputYear = document.getElementById("inputYear");
+    day = parseInt(day);
+    month = parseInt(month);
+    year = parseInt(year);
 
-//     if (!dobInputDay || !dobInputMonth || !dobInputYear) {
-//         alert("Please enter day, month, and year.");
-//         return;
-//     }
-// }
-const currentDateInput = new Date();
-console.log(currentDateInput);
-
-function getDob() {
-    let dob = new Date(year,month,day);
-    return dob;
+    if (!day || !month || !year) {
+        alert("Please enter a day, month, and year.");
+        return getBirthday;
+    } else {
+        let birthday = `${year}-${month}-${day}`;
+        console.log(birthday);
+        return getBirthday;
+    }
 }
 
-submitData.addEventListener("click", function outputAge() {
-    console.log(getDob());
-});
+function currentDate() {
+    const date = new Date();
+    const currentYear = date.getFullYear();
+    const currentMonth = date.getMonth() + 1;
+    const currentDay = date.getDate();
+
+    console.log(`${currentYear}-${currentMonth}-${currentDay}`);
+} 
+
+
+// const currentDay = new Date.prototype.getDate();
+// console.log(currentDay);
+
+
+
+// let dayDifference = parseInt(day) - currentDate;
+
+submitData.addEventListener("click", getBirthday);
+currentDate();
