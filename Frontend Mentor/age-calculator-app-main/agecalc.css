@@ -70,3 +70,8 @@ h4 {
     padding: 30px;
     border-radius: 100px;
 }
+
+button {
+    border: 0;
+    background-color: transparent;
+}

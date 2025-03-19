@@ -44,17 +44,21 @@ function ageOutput() {
     let numberOfMonths = remainderMilliseconds / numberOfMillisecondsInOneMonth;
     console.log(numberOfMonths);
 
-    remainderMilliseconds = dateDifference % numberOfMillisecondsInOneMonth;
-    // console.log(remainderMilliseconds);
 
+    // console.log(remainderMilliseconds);
+    remainderMilliseconds = remainderMilliseconds % numberOfMillisecondsInOneMonth;
     let numberOfMillisecondsInOneDay = 24 * 60 * 60 * 1000;
     let numberOfDays = remainderMilliseconds / numberOfMillisecondsInOneDay;
     console.log(numberOfDays);
 
-    // let outputYear = document.getElementById("yearOutput").innerText;
-    // let outputMonth = document.getElementById("monthOutput").innerText;
-    // let outputDay = document.getElementById("dayOutput").innerText;
+    let outputs = [numberOfYears, numberOfMonths, numberOfDays];
+    outputs = outputs.map(Math.floor);
+    console.log(outputs);
 
+
+    document.getElementById("yearOutput").innerText = outputs[0];
+    document.getElementById("monthOutput").innerText = outputs[1];
+    document.getElementById("dayOutput").innerText = outputs[2];
 }
 
 submitData.addEventListener("click", ageOutput);
