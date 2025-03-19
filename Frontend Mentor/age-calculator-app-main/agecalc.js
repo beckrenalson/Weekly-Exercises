@@ -31,31 +31,30 @@ function ageOutput() {
     let date1 = new Date(getBirthday());
     let date2 = new Date(currentDate());
     let dateDifference = date2 - date1;
-    console.log(dateDifference);
+    // console.log(dateDifference);
 
     let numberOfMillisecondsInOneYear = 365 * 24 * 60 * 60 * 1000;
     let numberOfYears = dateDifference / numberOfMillisecondsInOneYear;
     console.log(numberOfYears);
 
     let remainderMilliseconds = dateDifference % numberOfMillisecondsInOneYear;
-    console.log(remainderMilliseconds);
+    // console.log(remainderMilliseconds);
 
     let numberOfMillisecondsInOneMonth = 30 * 24 * 60 * 60 * 1000;
     let numberOfMonths = remainderMilliseconds / numberOfMillisecondsInOneMonth;
     console.log(numberOfMonths);
 
     remainderMilliseconds = dateDifference % numberOfMillisecondsInOneMonth;
-    console.log(remainderMilliseconds);
+    // console.log(remainderMilliseconds);
 
     let numberOfMillisecondsInOneDay = 24 * 60 * 60 * 1000;
     let numberOfDays = remainderMilliseconds / numberOfMillisecondsInOneDay;
     console.log(numberOfDays);
-    
-    // let dayDifference = currentDate() - getBirthday();
-    // console.log(parseInt(dayDifference));
+
     // let outputYear = document.getElementById("yearOutput").innerText;
     // let outputMonth = document.getElementById("monthOutput").innerText;
     // let outputDay = document.getElementById("dayOutput").innerText;
+
 }
 
 submitData.addEventListener("click", ageOutput);
