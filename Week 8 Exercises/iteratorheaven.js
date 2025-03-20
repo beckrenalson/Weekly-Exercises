@@ -10,20 +10,20 @@ let pizzas = [
     "chocolate",
     "pork",
 ];
-
+console.log("For Each");
 pizzas.forEach(function(pizza) {
     console.log(pizza);
 });
 
 console.log("");
-
+console.log("For Of");
 for (let pizza of pizzas) {
     console.log(pizza);
 };
 
 console.log("");
-
-for (let pizza = 0; pizza < pizzas.length; pizza++) {
-    console.log(pizza += pizzas[pizza] + "");
+console.log("")
+for (let i = 0; i < pizzas.length; i++) {
+    console.log(pizzas[i]);
 };
 
