@@ -1,0 +1,1 @@
+let amount = document.querySelector(".mortgageAmount");

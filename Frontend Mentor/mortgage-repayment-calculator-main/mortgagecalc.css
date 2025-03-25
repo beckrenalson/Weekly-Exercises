@@ -1,0 +1,168 @@
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(202, 86%, 94%);
+    font-family: PlusJakartaSans;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    width: fit-content;
+    background-color: white;
+    justify-content: flex-end;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px 0px 0px 40px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset {
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.card2 {
+    width: 400px;
+    border-radius: 0px 20px 20px 80px;
+    background-color: hsl(202, 55%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: hsl(203, 41%, 72%);
+    padding: 40px;
+    margin-left: 40px;
+}
+
+.whiteh2 {
+    color: white;
+}
+
+.mortgageAmount {
+    width: 90%;
+    height: 50px;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px hsl(200, 26%, 54%);
+    border-left: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.mortgageRate,
+.mortgageTerm {
+    height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 1px hsl(200, 26%, 54%);
+    border-right: 0;
+    width: 150px
+}
+
+.mortgageType {
+    display: flex;
+    flex-direction: column;
+}
+
+.radioButton {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 16px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border: solid 1px hsl(200, 26%, 54%);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.alignDivs {
+    display: flex;
+    align-items: center;
+}
+
+.pound {
+    border: solid 1px hsl(200, 26%, 54%);
+    height: 52px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 0;
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 24%, 40%);
+    font-size: 20px;
+}
+
+.years, .percent {
+    border: solid 1px hsl(200, 26%, 54%);
+    height: 52px;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0;
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 24%, 40%);
+    font-size: 20px;
+}
+
+.years {
+    padding: 0px 20px 0px 20px;
+}
+
+.percent {
+    padding: 0px 20px 0px 20px
+}
+
+h2 {
+    color: hsl(202, 55%, 16%);
+}
+
+p, .reset {
+    color: hsl(200, 24%, 40%);
+}
+
+.calculate {
+    height: 60px;
+    width: 70%;
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px
+}
