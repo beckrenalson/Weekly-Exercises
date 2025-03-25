@@ -28,6 +28,7 @@
   <div class="flex">
     <div class="card">
       <div class="leftSide">
+        
         <div class="head">
           <header>
             <h2>Mortgage Calculator</h2>
@@ -41,7 +42,7 @@
             <p>Mortgage Amount</p>
             <div class="alignDivs">
               <div class="pound bold">&pound;</div>
-              <input class="mortgageAmount">
+              <input class="mortgageAmount" id="mortgageAmount">
             </div>
           </div>
 
@@ -50,7 +51,7 @@
             <div class="term">
               <p>Mortgage Term</p>
               <div class="alignDivs">
-                <input class="mortgageTerm">
+                <input class="mortgageTerm" id="mortgageTerm">
                 <div class="years bold">years</div>
               </div>
             </div>
@@ -58,7 +59,7 @@
             <div class="rate">
               <p> Interest Rate</p>
               <div class="alignDivs">
-                <input class="mortgageRate">
+                <input class="mortgageRate" id="mortgageRate">
                 <div class="percent bold">%</div>
               </div>
             </div>
@@ -68,19 +69,25 @@
 
         <div class="mortgageType">
           <p>Mortgage Type</p>
+
           <button class="radioButton bold">
-            <input class="select" type="radio"><h2>Repayment</h2>
+            <input name="mortgageType" class="select" type="radio">
+            <h2>Repayment</h2>
           </button>
+
           <button class="radioButton bold">
-            <input class="select" type="radio"><h2>Interest Only</h2>
+            <input name="mortgageType" class="select" type="radio">
+            <h2>Interest Only</h2>
           </button>
         </div>
+
         <div>
           <button class="calculate">
             <img src="assets/images/icon-calculator.svg">
             <h2>Calculate Repayments</h2>
           </button>
         </div>
+
       </div>
 
       <div class="card2">
