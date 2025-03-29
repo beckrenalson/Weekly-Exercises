@@ -59,8 +59,8 @@ clearAllBtn.addEventListener("click", function () {
         radio.checked = false;
     });
 
-    document.querySelector(".complete").style.display = "none";
-    document.querySelector(".placeholder").style.display = "flex";
+    document.querySelector(".completedResults").style.display = "none";
+    document.querySelector(".emptyResults").style.display = "flex";
 });
 
 
