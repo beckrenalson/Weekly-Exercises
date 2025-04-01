@@ -41,8 +41,8 @@ calculateBtn.addEventListener("click", function () {
         totalPayment = (monthlyPayment * years * 12) + amount;
     }
 
-    document.querySelector(".monthlyRepayment").textContent = `£ ${monthlyPayment.toFixed(2)}`;
-    document.querySelector(".termRepayment").textContent = `£ ${totalPayment.toFixed(2)}`;
+    document.querySelector(".monthlyRepayment").textContent = `\u00A3 ${monthlyPayment.toFixed(2)}`;
+    document.querySelector(".termRepayment").textContent = `\u00A3 ${totalPayment.toFixed(2)}`;
     document.querySelector(".completedResults").style.display = "block";
     document.querySelector(".emptyResults").style.display = "none";
 });
