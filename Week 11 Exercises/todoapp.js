@@ -1,9 +1,8 @@
 const addTodoBtn = document.getElementById("addTodo");
-// const todo = document.querySelector(".todo");
 
 const todo1 = {
-    task: "Do Laundry", 
-    completed: false
+    task: "Do Laundry",
+    completed: true
 };
 
 const todo2 = {
@@ -14,37 +13,37 @@ const todo2 = {
 let todos = [todo1, todo2];
 
 // Render single todo
-addTodoBtn.addEventListener("click", () => {
+function renderTodo(pineapple) {
     const todoElement = document.createElement("div");
-    const radio = document.createElement("input");
+    const checkBox = document.createElement("input");
 
-    radio.type = "radio";
+    checkBox.type = "checkbox";
     todoElement.className = 'todo';
-    todoElement.textContent = document.getElementById("inputTodo").value;
-    const element = document.getElementById("todoList").appendChild(todoElement);
-    element.appendChild(radio);
-
-    renderTodos();
-});
+    todoElement.textContent = pineapple.task;
+    checkBox.checked = pineapple.completed;
+    const appendElement = document.getElementById("todoList").appendChild(todoElement);
+    appendElement.appendChild(checkBox);
+};
 
 // Clear existing todos from the DOM and render each todo in the array
 function renderTodos() {
     const todoList = document.getElementById("todoList");
     todoList.replaceChildren();
 
-    todos.forEach(todo => {
-        addTodo(todo);
+    todos.forEach((todo) => { renderTodo(todo) });
+
+    console.log(todos);
+};
+
+// Add single todo
+addTodoBtn.addEventListener("click", () => {
+        const todoText = document.getElementById("inputTodo").value;
+        const newTodo = {
+            task: todoText,
+            completed: false
+        }
+
+        todos.push(newTodo);
+        renderTodos();
     });
-};
 
-function addTodo(todoText) {
-    const newTodo = {
-        task: todoText,
-        completed: false
-    }
-
-    todos.push(newTodo);
-    renderTodos();
-};
-
-console.log(todos);
