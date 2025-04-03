@@ -13,14 +13,14 @@ const todo2 = {
 let todos = [todo1, todo2];
 
 // Render single todo
-function renderTodo(pineapple) {
+function renderTodo(todo) {
     const todoElement = document.createElement("div");
     const checkBox = document.createElement("input");
 
     checkBox.type = "checkbox";
     todoElement.className = 'todo';
-    todoElement.textContent = pineapple.task;
-    checkBox.checked = pineapple.completed;
+    todoElement.textContent = todo.task;
+    checkBox.checked = todo.completed;
     const appendElement = document.getElementById("todoList").appendChild(todoElement);
     appendElement.appendChild(checkBox);
 };
