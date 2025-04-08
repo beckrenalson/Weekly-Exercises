@@ -1,16 +1,21 @@
 const addTodoBtn = document.getElementById("addTodo");
+// Initial render
+document.addEventListener('DOMContentLoaded', function() {
+    todos = loadTodos();
+    renderTodos();
+  });
 
-const todo1 = {
-    task: "Do Laundry",
-    completed: true
-};
+// const todo1 = {
+//     task: "Do Laundry",
+//     completed: true
+// };
 
-const todo2 = {
-    task: "Learn JavaScript",
-    completed: false
-};
+// const todo2 = {
+//     task: "Learn JavaScript",
+//     completed: false
+// };
 
-let todos = [todo1, todo2];
+let todos = [];
 
 // Render single todo
 function renderTodo(todo) {
@@ -47,3 +52,16 @@ addTodoBtn.addEventListener("click", () => {
         renderTodos();
     });
 
+// Convert todos array to a string and save it in localStorage
+
+function saveTodos() {
+    localStorage.setItem('todos', JSON.stringify(todos));
+};
+
+function loadTodos() {
+    const savedTodos = localStorage.getItem('todos');
+    if (savedTodos) {
+        return JSON.parse(savedTodos);
+    }
+    return [];
+};
