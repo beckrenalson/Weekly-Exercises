@@ -6,17 +6,18 @@ function ThemeToggler() {
 
 
   // Add your useEffects here
-
-
   useEffect(() => {
-    if (localStorage.getItem("isDarkMode") == "true") {
-      setIsDarkMode(true)
-    } 
+    const savedTheme = JSON.parse(localStorage.getItem("isDarkMode"));
+    if (savedTheme === true) {
+      setIsDarkMode(true);
+    }
   }, []);
 
   useEffect(() => {
-    document.body.className = isDarkMode ? "dark-theme" : "light-theme";
-    localStorage.setItem("isDarkMode", isDarkMode);
+    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
+
+    document.body.classList.toggle("dark-theme", isDarkMode);
+    document.body.classList.toggle("light-theme", !isDarkMode);
   }, [isDarkMode]);
 
   return (
