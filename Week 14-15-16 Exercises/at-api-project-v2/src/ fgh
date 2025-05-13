@@ -1,0 +1,10 @@
+    const newApiUrl = `
+    https://
+    pp-api.at.govt.nz
+    /gtfs/v3/stops/${stopId}/stoptrips
+    ?
+    filter[date]=${filter[date]}
+    &
+    filter[start_hour]=${filter[start_hour]}
+    &
+    filter[hour_range]=${filter[hour_range]}`
