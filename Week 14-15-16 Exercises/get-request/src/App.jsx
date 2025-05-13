@@ -43,7 +43,7 @@ export default function GetRequestApp() {
       <button
         onClick={fetchPosts}
         disabled={isLoading}
-        className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+        className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
       >
         {isLoading ? 'Loading...' : 'Fetch Posts'}
       </button>
